@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "native": "cd apps/neutron && pnpm start",
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "prebuild": "cd apps/neutron && pnpm prebuild",
+    "web": "cd apps/neutron && pnpm web",
+    "ios": "cd apps/neutron && pnpm ios",
+    "android": "cd apps/neutron && pnpm android",
   },
   "devDependencies": {
     "prettier": "^3.3.3",
